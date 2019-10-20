@@ -129,3 +129,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.container {
+  margin: 0 auto;
+  max-width: 967px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: default;
+}
+h1 {
+  font-size: 12rem;
+}
+header .banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 100%;
+}
+header .banner .banner-text {
+  position: absolute;
+  left: 0px;
+  margin-left: 10%;
+  width: 65%;
+}
+header .banner .banner-text em {
+  font-size: 2em;
+}
+header .banner .banner-text em span {
+  font-size: 0.6em;
+}
+header .banner img {
+  width: 40%;
+  opacity: 0.5;
+}
