@@ -1,3 +1,6 @@
+.nice_border {
+  border-radius: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -148,7 +151,7 @@ h3 {
   font-size: 6rem;
 }
 p {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 #sub-btn {
   border: 0;
@@ -213,8 +216,23 @@ header .banner img {
   width: 40%;
   opacity: 0.5;
 }
+section .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 section .support {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin: 10% 0;
+}
+section .img {
+  width: 45%;
+  margin: 20px 2.5%;
+  height: 100%;
 }
 .form {
   width: 50%;
