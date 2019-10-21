@@ -11,22 +11,39 @@ header {
 
   .banner {
     .flex (row, flex-end, center);
+    position: relative;
     max-width: 100%;
-    .banner-text {
-      position: absolute;
-      left: 0px;
-      margin-left: 10%;
-      width: 65%;
-      em {
-        font-size: 2em;
-        span {
-          font-size: .6em;
+
+      h1 {
+        max-width: 100%;
+        height: auto;
+        div {
+          position: absolute;
+          em {
+            font-size: 2em;
+            }
+        }
+        #dev {
+          top: 5%;
+          left: 4%;
+          opacity: .9;
+        }
+        #desk {
+          top: 20%;
+          left: 29%;
+        }
+        #queue {
+          top: 40%;
+          left: 10%;
+          opacity: .9;
         }
       }
-    }
+
+
+    
     img {
       width: 40%;
-      opacity: .5;
+      opacity: .8;
     }
 
   } // .banner
