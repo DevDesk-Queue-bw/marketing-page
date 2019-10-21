@@ -132,13 +132,14 @@ table {
 .container {
   margin: 0 auto;
   max-width: 967px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: default;
 }
 h1 {
-  font-size: 12rem;
+  font-size: 10rem;
 }
 h2 {
   font-size: 6rem;
@@ -195,23 +196,36 @@ header .banner {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
   max-width: 100%;
 }
-header .banner .banner-text {
-  position: absolute;
-  left: 0px;
-  margin-left: 10%;
-  width: 65%;
+header .banner h1 {
+  max-width: 100%;
+  height: auto;
 }
-header .banner .banner-text em {
+header .banner h1 div {
+  position: absolute;
+}
+header .banner h1 div em {
   font-size: 2em;
 }
-header .banner .banner-text em span {
-  font-size: 0.6em;
+header .banner h1 #dev {
+  top: 5%;
+  left: 4%;
+  opacity: 0.9;
+}
+header .banner h1 #desk {
+  top: 20%;
+  left: 29%;
+}
+header .banner h1 #queue {
+  top: 40%;
+  left: 10%;
+  opacity: 0.9;
 }
 header .banner img {
   width: 40%;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 section .support {
   margin: 10% 0;
