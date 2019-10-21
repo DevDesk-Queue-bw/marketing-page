@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
   <title>DevDesk Queue</title>
 </head>
@@ -12,12 +13,12 @@
     <header>
       <div class = "nav_bar">
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">Solution</a>
-          <a href="#">Team</a>
+          <a href="#">H<span>ome</span></a>
+          <a href="#">S<span>ervices</span></a>
+          <a href="#">S<span>olution</span></a>
+          <a href="#">T<span>eam</span></a>
         </nav>
-        <img src="#" alt="DevDesk Queue Logo: Blue Pinguin">
+        <img src="img/logo.png" alt="DevDesk Queue Logo: Blue Pinguin">
       </div>
       <div class="banner">
         <div class="banner-text">
@@ -27,8 +28,30 @@
         <img src="img/random.jpg" alt="unsplash img">
       </div>
     </header>
+  <section>
+    <div class = "support">
+      <h2>Student support and help </h2>
+
+      <p></p>
+
+    </div>
+
+  </section>
+
+<form class = form>
+  <h3>Learn More</h3>
+  <label for="username">First name</label>
+  <input type="text" id="username" placeholder="John" required>
+  <label for="username">Last name</label>
+  <input type="text" id="username" placeholder="Smith" required>
+  <label for="email">Work email</label>
+  <input type="email" id="email" placeholder="email" required>
+  <label for="phone">Phone number</label>
+  <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx"
+   pattern= "[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+   <input type="submit" id="sub-btn" value="Let's get started">
+</form>
   
-  <p></p>
-</div>
+
 </body>
 </html>
