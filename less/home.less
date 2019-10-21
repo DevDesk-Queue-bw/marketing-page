@@ -80,19 +80,37 @@ section {
 } // form end
 footer {
   background-color: grey;
-  .flex(column, space-around, center);
-  .footer-cont {
-    .flex(row, flex-end, center);
-    width: 70%;
-    ul {
 
+  .flex(row, space-around, center);
+  flex-wrap: wrap;
+  .footer-cont {
+    .flex(row, space-between, center);
+    width: 70%;
+    img {
+      width: 150px;
+      height: auto;
+    }
+
+    ul {
       li {
         padding: 10px;
+        h3 {
+          background: darkred;
+          color: white;
+          padding: 15px;
+        }
+        a {
+          color: black;
+        }
       }
     }
   }
   small {
+    text-align: center;
     font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    padding: 20px;
   }
   // 1 footer section
 }// footer end

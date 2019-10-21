@@ -263,20 +263,37 @@ section .support {
 footer {
   background-color: grey;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 footer .footer-cont {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: 70%;
+}
+footer .footer-cont img {
+  width: 150px;
+  height: auto;
 }
 footer .footer-cont ul li {
   padding: 10px;
 }
+footer .footer-cont ul li h3 {
+  background: darkred;
+  color: white;
+  padding: 15px;
+}
+footer .footer-cont ul li a {
+  color: black;
+}
 footer small {
+  text-align: center;
   font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  padding: 20px;
 }
