@@ -140,6 +140,38 @@ table {
 h1 {
   font-size: 12rem;
 }
+h2 {
+  font-size: 6rem;
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_bar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: default;
+  width: 75%;
+}
+.nav_bar nav a {
+  text-decoration: none;
+  font-size: 4rem;
+}
+.nav_bar nav a span {
+  font-size: 0.6em;
+}
+header .nav_bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+header .nav_bar img {
+  height: auto;
+  width: 17%;
+}
 header .banner {
   display: flex;
   flex-direction: row;
@@ -162,4 +194,7 @@ header .banner .banner-text em span {
 header .banner img {
   width: 40%;
   opacity: 0.5;
+}
+section .support {
+  margin: 10% 0;
 }
