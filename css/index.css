@@ -130,6 +130,7 @@ table {
   border-spacing: 0;
 }
 .container-wide {
+  padding-top: 75px;
   margin: 0 auto;
   width: 100%;
   position: relative;
@@ -375,4 +376,15 @@ footer small {
   display: block;
   width: 100%;
   padding: 20px;
+}
+.portrait {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.portrait img {
+  padding: 20px;
+  width: 200px;
+  height: auto;
 }
