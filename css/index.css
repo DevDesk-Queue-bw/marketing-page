@@ -189,53 +189,71 @@ a {
   width: 75%;
 }
 .nav_bar nav a {
+  color: black;
   text-decoration: none;
   font-size: 4rem;
+  padding: 10px;
 }
 .nav_bar nav a span {
   font-size: 0.6em;
 }
-header .nav_bar {
+.nav_bar {
+  background: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-header .nav_bar img {
-  height: auto;
-  width: 17%;
+.nav_bar nav {
+  margin-left: 2%;
+  width: 35%;
 }
-header .banner {
+.nav_bar img {
+  height: auto;
+  width: 150px;
+}
+header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  background: lightpink;
+}
+header div {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  max-width: 100%;
+  margin: 0 auto;
 }
-header .banner h1 {
+header div h1 {
   max-width: 100%;
   height: auto;
 }
-header .banner h1 div {
+header div h1 div {
   position: absolute;
 }
-header .banner h1 div em {
+header div h1 div em {
   font-size: 2em;
 }
-header .banner h1 #dev {
+header div h1 #dev {
   top: 5%;
   left: 4%;
   opacity: 0.9;
 }
-header .banner h1 #desk {
+header div h1 #desk {
   top: 20%;
   left: 29%;
 }
-header .banner h1 #queue {
+header div h1 #queue {
   top: 40%;
   left: 10%;
   opacity: 0.9;
 }
-header .banner img {
+header div img {
   width: 40%;
   opacity: 0.8;
 }
@@ -283,6 +301,7 @@ section .img {
 }
 footer {
   background-color: grey;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -292,9 +311,9 @@ footer {
 footer .footer-cont {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 70%;
+  width: 100%;
 }
 footer .footer-cont img {
   width: 150px;
