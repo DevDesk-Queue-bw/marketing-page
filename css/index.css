@@ -144,6 +144,12 @@ h2 {
   font-size: 6rem;
   font-family: 'Montserrat Subrayada', sans-serif;
 }
+h3 {
+  font-size: 6rem;
+}
+p {
+  font-size: 4rem;
+}
 .nav_bar {
   display: flex;
   flex-direction: row;
