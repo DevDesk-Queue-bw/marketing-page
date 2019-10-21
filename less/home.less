@@ -1,17 +1,19 @@
 
 .nav_bar {
   background: grey;
-
+  position: fixed;
+  top: 0px;
   .flex (row, space-between, center);
   width: 100%;
-  .paddingtb(20px, 20px);
+  height: auto;
+  z-index: 20;
   nav {
     margin-left: 2%;
     width: 35%;
   }
   img{
     height: auto;
-    width: 150px; 
+    width: 100px; 
   }
 } // we're reusing nav bar & footer, should we migrate this to nav-bar.less? 
 
