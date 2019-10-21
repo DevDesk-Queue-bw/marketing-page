@@ -1,19 +1,32 @@
 
+.nav_bar {
+  background: grey;
+  position: fixed;
+  top: 0px;
+  .flex (row, space-between, center);
+  width: 100%;
+  height: auto;
+  z-index: 20;
+  nav {
+    margin-left: 2%;
+    width: 35%;
+  }
+  img{
+    height: auto;
+    width: 100px; 
+  }
+} // we're reusing nav bar & footer, should we migrate this to nav-bar.less? 
+
 header {
+  .paddingtb(40px, 40px);
+  width: 100%;
+  background: lightpink;
 
-  .nav_bar {
-    .margintb(20px, 20px);
-    img{
-      height: auto;
-      width: 17%;
-    }
-  } // we're reusing nav bar & footer, should we migrate this to nav-bar.less? 
-
-  .banner {
+  div {
     .flex (row, flex-end, center);
     position: relative;
-    max-width: 100%;
-
+    margin: 0 auto;
+    z-index: 5;
       h1 {
         max-width: 100%;
         height: auto;
@@ -22,20 +35,30 @@ header {
           em {
             font-size: 2em;
             }
+
         }
         #dev {
           top: 5%;
           left: 4%;
-          opacity: .9;
+          @media @tablet {
+            font-size: .8em;
+            top: 0%;
+            left: 3%;
+          }
         }
+      }
         #desk {
           top: 20%;
-          left: 29%;
+          left: 30%;
+          @media @tablet {
+            font-size: .8em;
+            top: 0%;
+            left: 35%;
+          }
         }
         #queue {
           top: 40%;
           left: 10%;
-          opacity: .9;
         }
       }
 
@@ -46,8 +69,8 @@ header {
       opacity: .8;
     }
 
-  } // .banner
-} // header
+} // .banner
+
 
 section {
   .content{
@@ -108,25 +131,31 @@ section {
   }
 } // form end
 footer {
+  .paddingtb(20px, 20px);
   background-color: grey;
-
+  width: 100%;
   .flex(row, space-around, center);
   flex-wrap: wrap;
   .footer-cont {
-    .flex(row, space-between, center);
-    width: 70%;
+    .flex(row, space-around, center);
+    flex-wrap: wrap;
+    width: 100%;
     img {
       width: 150px;
       height: auto;
     }
 
     ul {
+      .paddingtb(10px, 10px);
+
       li {
         padding: 10px;
         h3 {
           background: darkred;
           color: white;
           padding: 15px;
+          width: 270px;
+          text-align: center;
         }
         a {
           color: black;
