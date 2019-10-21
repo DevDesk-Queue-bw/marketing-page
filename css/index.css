@@ -152,7 +152,7 @@ h2 {
   font-family: 'Montserrat Subrayada', sans-serif;
 }
 h3 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 p {
   font-size: 2rem;
@@ -204,8 +204,8 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .nav_bar nav {
   margin-left: 2%;
@@ -216,8 +216,8 @@ a {
   width: 150px;
 }
 header {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 100%;
   background: lightpink;
 }
@@ -228,6 +228,7 @@ header div {
   align-items: center;
   position: relative;
   margin: 0 auto;
+  z-index: 5;
 }
 header div h1 {
   max-width: 100%;
@@ -242,18 +243,30 @@ header div h1 div em {
 header div h1 #dev {
   top: 5%;
   left: 4%;
-  opacity: 0.9;
 }
-header div h1 #desk {
+@media (max-width: 900px) {
+  header div h1 #dev {
+    font-size: 0.8em;
+    top: 0%;
+    left: 3%;
+  }
+}
+header div #desk {
   top: 20%;
-  left: 29%;
+  left: 30%;
 }
-header div h1 #queue {
+@media (max-width: 900px) {
+  header div #desk {
+    font-size: 0.8em;
+    top: 0%;
+    left: 35%;
+  }
+}
+header div #queue {
   top: 40%;
   left: 10%;
-  opacity: 0.9;
 }
-header div img {
+header img {
   width: 40%;
   opacity: 0.8;
 }
@@ -300,6 +313,8 @@ section .img {
   font-size: 2rem;
 }
 footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: grey;
   width: 100%;
   display: flex;
@@ -313,11 +328,16 @@ footer .footer-cont {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 footer .footer-cont img {
   width: 150px;
   height: auto;
+}
+footer .footer-cont ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 footer .footer-cont ul li {
   padding: 10px;
@@ -326,6 +346,8 @@ footer .footer-cont ul li h3 {
   background: darkred;
   color: white;
   padding: 15px;
+  width: 270px;
+  text-align: center;
 }
 footer .footer-cont ul li a {
   color: black;

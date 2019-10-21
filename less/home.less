@@ -4,7 +4,7 @@
 
   .flex (row, space-between, center);
   width: 100%;
-  .margintb(20px, 20px);
+  .paddingtb(20px, 20px);
   nav {
     margin-left: 2%;
     width: 35%;
@@ -16,7 +16,7 @@
 } // we're reusing nav bar & footer, should we migrate this to nav-bar.less? 
 
 header {
-  .margintb(40px, 40px);
+  .paddingtb(40px, 40px);
   width: 100%;
   background: lightpink;
 
@@ -24,7 +24,7 @@ header {
     .flex (row, flex-end, center);
     position: relative;
     margin: 0 auto;
-
+    z-index: 5;
       h1 {
         max-width: 100%;
         height: auto;
@@ -33,20 +33,30 @@ header {
           em {
             font-size: 2em;
             }
+
         }
         #dev {
           top: 5%;
           left: 4%;
-          opacity: .9;
+          @media @tablet {
+            font-size: .8em;
+            top: 0%;
+            left: 3%;
+          }
         }
+      }
         #desk {
           top: 20%;
-          left: 29%;
+          left: 30%;
+          @media @tablet {
+            font-size: .8em;
+            top: 0%;
+            left: 35%;
+          }
         }
         #queue {
           top: 40%;
           left: 10%;
-          opacity: .9;
         }
       }
 
@@ -57,8 +67,8 @@ header {
       opacity: .8;
     }
 
-  } // .banner
-} // header
+} // .banner
+
 
 section {
   .content{
@@ -100,12 +110,14 @@ section {
   }
 } // form end
 footer {
+  .paddingtb(20px, 20px);
   background-color: grey;
   width: 100%;
   .flex(row, space-around, center);
   flex-wrap: wrap;
   .footer-cont {
     .flex(row, space-around, center);
+    flex-wrap: wrap;
     width: 100%;
     img {
       width: 150px;
@@ -113,6 +125,7 @@ footer {
     }
 
     ul {
+      .paddingtb(10px, 10px);
 
       li {
         padding: 10px;
@@ -120,6 +133,8 @@ footer {
           background: darkred;
           color: white;
           padding: 15px;
+          width: 270px;
+          text-align: center;
         }
         a {
           color: black;
