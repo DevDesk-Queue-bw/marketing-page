@@ -276,6 +276,15 @@ section .content {
   justify-content: space-between;
   align-items: center;
 }
+section .student-help,
+section h2 {
+  text-align: center;
+  margin: 4% 0;
+}
+section .student-help p,
+section h2 p {
+  color: slategrey;
+}
 section .support {
   display: flex;
   flex-direction: row;
