@@ -1,6 +1,14 @@
-.about-main {
-  .flex(row, space-around, space-around);
+.about-row {
+  width: 100%;
+  .flex(row, space-evenly, center);
   flex-wrap: wrap;
+  .paddingtb(50px, 50px);
+  .port-cont {
+    .flex(column, space-between, center);
 
-
+    .port-text-cont {
+      .flex(column, space-between, center);
+      // display: none;
+    }
+  }
 }
