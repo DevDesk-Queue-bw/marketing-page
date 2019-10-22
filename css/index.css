@@ -284,22 +284,24 @@ section h2 {
 section .student-help p,
 section h2 p {
   color: slategrey;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
 }
 section .support {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 10% 0;
+  background-color: gainsboro;
+}
+section .support p {
+  font-size: 3rem;
+  text-align: center;
 }
 section .img {
   width: 45%;
   margin: 20px 2.5%;
   height: 100%;
-}
-section p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
 }
 .mid-content {
   text-align: center;
