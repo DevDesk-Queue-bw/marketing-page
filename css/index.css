@@ -152,6 +152,9 @@ h2 {
 h3 {
   font-size: 3.5rem;
 }
+h4 {
+  font-size: 2.5rem;
+}
 p {
   font-size: 2rem;
 }
@@ -172,6 +175,46 @@ a {
 }
 #sub-btn:hover {
   background: lightblue;
+}
+.portrait-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portrait-wrapper .portrait-img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.portrait-wrapper .sml-p {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: pink;
+  margin: 20px;
+}
+.portrait-wrapper .med-p {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.portrait-wrapper .lg-p {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 80px;
+}
+.portrait-wrapper .portrait-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.portrait-wrapper .portrait-text h4 {
+  padding: 10px;
 }
 .nav_bar {
   display: flex;
@@ -395,14 +438,10 @@ footer small {
   width: 100%;
   padding: 20px;
 }
-.portrait {
+.about-main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-}
-.portrait img {
-  padding: 20px;
-  width: 200px;
-  height: auto;
+  align-items: space-around;
+  flex-wrap: wrap;
 }
