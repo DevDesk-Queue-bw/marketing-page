@@ -177,48 +177,14 @@ a {
 #sub-btn:hover {
   background: lightblue;
 }
-.small-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-}
 .med-img {
   width: 200px;
   height: 200px;
   border-radius: 100%;
 }
-.lg-img {
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-}
-#marc {
-  position: relative;
-  top: 50px;
-}
-#hui {
-  position: relative;
-  top: -50px;
-  left: 30px;
-}
-#theo {
-  position: relative;
-  top: 70px;
-}
-#alej {
-  position: relative;
-  top: -50px;
-  right: 30px;
-}
-#jeff {
-  position: relative;
-  top: -20px;
-  right: 40px;
-}
-#low {
-  position: relative;
-  top: 20px;
-  right: 50px;
+.med-img:hover {
+  width: 220px;
+  height: 220px;
 }
 .nav_bar {
   display: flex;
@@ -444,23 +410,24 @@ footer small {
 }
 .about-row {
   width: 100%;
+  padding: 5%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 .about-row .port-cont {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 5%;
 }
 .about-row .port-cont .port-text-cont {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  display: none;
 }

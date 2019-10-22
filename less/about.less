@@ -1,14 +1,18 @@
 .about-row {
   width: 100%;
-  .flex(row, space-evenly, center);
+  padding: 5%;
+  .flex(row, space-around, center);
   flex-wrap: wrap;
-  .paddingtb(50px, 50px);
+  // .paddingtb(50px, 50px);
+
   .port-cont {
-    .flex(column, space-between, center);
+    .flex(column, space-around, center);
+    padding: 5%;
+
 
     .port-text-cont {
       .flex(column, space-between, center);
-      // display: none;
+      display: none;
     }
   }
 }
