@@ -18,8 +18,9 @@
 } // we're reusing nav bar & footer, should we migrate this to nav-bar.less? 
 
 header {
-  .paddingtb(40px, 40px);
+  .paddingtb(40px, 60px);
   width: 100%;
+  height: 450px;
   background: lightpink;
 
   div {
@@ -38,27 +39,34 @@ header {
 
         }
         #dev {
-          top: 5%;
+          top: -30px;
           left: 4%;
           @media @tablet {
-            font-size: .8em;
-            top: 0%;
+
+            top: -50px;
             left: 3%;
+            font-size: .8em;
           }
         }
       }
         #desk {
-          top: 20%;
-          left: 30%;
+          top: 90px;
+          left: 25%;
           @media @tablet {
+
+            top: 110px;
+            left: 3%;
             font-size: .8em;
-            top: 0%;
-            left: 35%;
           }
         }
         #queue {
-          top: 40%;
+          top: 220px;
           left: 10%;
+          @media @tablet {
+            top: 270px;
+            left: 3%;
+            font-size: .8em;
+          }
         }
       }
 
@@ -66,7 +74,13 @@ header {
     
     img {
       width: 40%;
+      height: 450px;
       opacity: .8;
+      border-radius: 100%;
+      padding-right: 3%;
+      @media @tablet {
+        width: 50%;
+      }
     }
 
 } // .banner

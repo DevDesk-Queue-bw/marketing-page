@@ -217,8 +217,9 @@ a {
 }
 header {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   width: 100%;
+  height: 450px;
   background: lightpink;
 }
 header div {
@@ -241,34 +242,49 @@ header div h1 div em {
   font-size: 2em;
 }
 header div h1 #dev {
-  top: 5%;
+  top: -30px;
   left: 4%;
 }
 @media (max-width: 900px) {
   header div h1 #dev {
-    font-size: 0.8em;
-    top: 0%;
+    top: -50px;
     left: 3%;
+    font-size: 0.8em;
   }
 }
 header div #desk {
-  top: 20%;
-  left: 30%;
+  top: 90px;
+  left: 25%;
 }
 @media (max-width: 900px) {
   header div #desk {
+    top: 110px;
+    left: 3%;
     font-size: 0.8em;
-    top: 0%;
-    left: 35%;
   }
 }
 header div #queue {
-  top: 40%;
+  top: 220px;
   left: 10%;
+}
+@media (max-width: 900px) {
+  header div #queue {
+    top: 270px;
+    left: 3%;
+    font-size: 0.8em;
+  }
 }
 header img {
   width: 40%;
+  height: 450px;
   opacity: 0.8;
+  border-radius: 100%;
+  padding-right: 3%;
+}
+@media (max-width: 900px) {
+  header img {
+    width: 50%;
+  }
 }
 section .content {
   display: flex;
