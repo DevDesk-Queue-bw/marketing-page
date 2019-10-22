@@ -250,6 +250,11 @@ a {
   height: auto;
   z-index: 20;
 }
+@media (max-width: 550px) {
+  .nav_bar {
+    width: 550px;
+  }
+}
 .nav_bar nav {
   margin-left: 2%;
   width: 35%;
@@ -323,10 +328,11 @@ header img {
   opacity: 0.8;
   border-radius: 100%;
   padding-right: 3%;
+  transform: rotate(-90deg);
 }
 @media (max-width: 900px) {
   header img {
-    width: 50%;
+    width: 70%;
   }
 }
 section .content {
@@ -347,36 +353,83 @@ section h2 p {
   font-size: 2rem;
   text-align: center;
 }
+@media (max-width: 550px) {
+  section .student-help p,
+  section h2 p {
+    font-size: 1.4rem;
+    margin: 2%;
+    text-align: center;
+  }
+}
 section .support {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: gainsboro;
-  margin: 2%;
+}
+@media (max-width: 550px) {
+  section .support {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+  }
 }
 section .support p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
+}
+@media (max-width: 550px) {
+  section .support p {
+    font-size: 2rem;
+  }
 }
 section .img {
   width: 45%;
   margin: 20px 2.5%;
   height: 100%;
 }
+@media (max-width: 550px) {
+  section .img {
+    width: 90%;
+  }
+}
 .mid-content {
   text-align: center;
+}
+@media (max-width: 550px) {
+  .mid-content {
+    width: 100%;
+  }
 }
 .mid-content img {
   width: 55%;
   padding: 2%;
 }
+@media (max-width: 550px) {
+  .mid-content img {
+    width: 85%;
+  }
+}
 .mid-content h1 {
   color: slategray;
+}
+@media (max-width: 550px) {
+  .mid-content h1 {
+    font-size: 500%;
+  }
 }
 .mid-content p {
   color: dimgrey;
   font-size: 2.5rem;
+}
+@media (max-width: 550px) {
+  .mid-content p {
+    font-size: 2.4rem;
+    padding: 4%;
+  }
 }
 h3 {
   text-align: center;
