@@ -77,50 +77,51 @@ section {
   .content{
     .flex (column, space-between, center);
   }
-  // 1 content section
+  .student-help, h2{
+    text-align: center;
+    margin: 4% 0;
+    p{
+      color: slategrey;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+    }
+  } // 1 content section
   .support{
     .flex (row, space-between, center);
-    margin: 10% 0;
+    background-color: gainsboro;
+    margin: 2%;
+    p{
+      font-size: 3rem;
+      text-align: center;
+    }
   }
   .img{
     width: 45%;
     margin: 20px 2.5%;
     height: 100%;
-  }
-  p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-  }
+  } // end of img class
 }// section end 
 
 .mid-content{
   text-align: center;
-  width:100%;
-  height: 50vh;
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-image:url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  img{
+    width: 55%;
+    padding:2%;
+  }
   h1{
-    color: blueviolet;
+    color: slategray;
   }
   p{
-    color: peru;
+    color:dimgrey;
+    font-size: 2.5rem;
   }
   
 }
-.form{
-  width:50%;
-  margin: 2rem auto;
-  border: 2px solid red;
-  padding: 2rem;
-  background: lightcyan;
-  border: lightgoldenrodyellow;
   h3{
     text-align: center;
   }
-  p{
-    text-align: justify;
-  }
+ 
   label{
     display: block;
     font-size: 2rem;
@@ -129,8 +130,7 @@ section {
     display: block;
     width: 100%;
     font-size: 2rem;
-  }
-} // form end
+  } // input textarea end
 footer {
   .paddingtb(20px, 20px);
   background-color: grey;

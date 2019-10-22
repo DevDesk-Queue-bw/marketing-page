@@ -276,56 +276,58 @@ section .content {
   justify-content: space-between;
   align-items: center;
 }
+section .student-help,
+section h2 {
+  text-align: center;
+  margin: 4% 0;
+}
+section .student-help p,
+section h2 p {
+  color: slategrey;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
 section .support {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 10% 0;
+  background-color: gainsboro;
+  margin: 2%;
+}
+section .support p {
+  font-size: 3rem;
+  text-align: center;
 }
 section .img {
   width: 45%;
   margin: 20px 2.5%;
   height: 100%;
 }
-section p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-}
 .mid-content {
   text-align: center;
-  width: 100%;
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+}
+.mid-content img {
+  width: 55%;
+  padding: 2%;
 }
 .mid-content h1 {
-  color: blueviolet;
+  color: slategray;
 }
 .mid-content p {
-  color: peru;
+  color: dimgrey;
+  font-size: 2.5rem;
 }
-.form {
-  width: 50%;
-  margin: 2rem auto;
-  border: 2px solid red;
-  padding: 2rem;
-  background: lightcyan;
-  border: lightgoldenrodyellow;
-}
-.form h3 {
+h3 {
   text-align: center;
 }
-.form p {
-  text-align: justify;
-}
-.form label {
+label {
   display: block;
   font-size: 2rem;
 }
-.form input,
-.form textarea {
+input,
+textarea {
   display: block;
   width: 100%;
   font-size: 2rem;
