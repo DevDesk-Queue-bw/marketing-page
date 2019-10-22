@@ -286,6 +286,7 @@ section h2 p {
   color: slategrey;
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
+  text-align: center;
 }
 section .support {
   display: flex;
@@ -318,26 +319,15 @@ section .img {
   color: dimgrey;
   font-size: 2.5rem;
 }
-.form {
-  width: 50%;
-  margin: 2rem auto;
-  border: 2px solid red;
-  padding: 2rem;
-  background: lightcyan;
-  border: lightgoldenrodyellow;
-}
-.form h3 {
+h3 {
   text-align: center;
 }
-.form p {
-  text-align: justify;
-}
-.form label {
+label {
   display: block;
   font-size: 2rem;
 }
-.form input,
-.form textarea {
+input,
+textarea {
   display: block;
   width: 100%;
   font-size: 2rem;
