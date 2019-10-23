@@ -184,13 +184,14 @@ a {
 .med-img {
   width: 300px;
   height: 300px;
+  margin: 5px;
   border-radius: 100%;
   display: initial;
 }
 .med-img:hover {
   width: 310px;
   height: 310px;
-  border: 1px solid turquoise;
+  border: 1px solid #39BFFF;
 }
 .fa {
   font-size: 30px;
@@ -221,6 +222,11 @@ a {
   text-decoration: none;
   font-size: 4rem;
   padding: 10px;
+  border-bottom: 2px solid white;
+}
+.nav_bar nav a:hover {
+  border-color: black;
+  color: #999999;
 }
 .nav_bar nav a span {
   font-size: 0.6em;
@@ -531,11 +537,10 @@ a {
   justify-content: space-around;
   align-items: center;
   padding: 5%;
-  width: 250px;
   border-radius: 5px;
-  background-color: turquoise;
+  background-color: #39BFFF;
   height: 450px;
-  border: 2px solid turquoise;
+  border: 2px solid #39BFFF;
 }
 .about-row .port-cont:hover {
   border-color: pink;
