@@ -178,6 +178,9 @@ a {
 #sub-btn:hover {
   background: lightblue;
 }
+.btn-cont a {
+  padding: 5px;
+}
 .med-img {
   width: 300px;
   height: 300px;
@@ -232,7 +235,7 @@ a {
   height: auto;
   width: 100px;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .nav_bar img {
     display: none;
   }
@@ -340,7 +343,7 @@ a {
 .container-wide .content h2 {
   text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container-wide .content h2 {
     font-size: 1.4rem;
     margin: 4% 0;
@@ -352,7 +355,7 @@ a {
   font-size: 2rem;
   text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container-wide .content p {
     font-size: 1.4rem;
     margin: 2%;
@@ -367,7 +370,7 @@ a {
   flex-wrap: wrap;
   margin: 0 auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container-wide .support {
     flex-direction: column;
     padding: 5%;
@@ -403,7 +406,7 @@ a {
     order: 5;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container-wide .support p {
     font-size: 2rem;
     margin: 0;
@@ -420,7 +423,7 @@ a {
   text-align: center;
   padding: 2% 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container-wide .mid-content {
     width: 100%;
   }
@@ -429,7 +432,7 @@ a {
   width: 55%;
   padding: 2%;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container-wide .mid-content img {
     width: 85%;
   }
@@ -446,7 +449,7 @@ a {
     margin: auto;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container-wide .mid-content p {
     font-size: 2.8rem;
     padding: 4%;
@@ -480,7 +483,7 @@ a {
 .container-wide footer .footer-cont {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: baseline;
   flex-wrap: wrap;
   width: 100%;
@@ -496,15 +499,15 @@ a {
 .container-wide footer .footer-cont ul li {
   padding: 10px;
 }
+.container-wide footer .footer-cont ul li a {
+  color: black;
+}
 .container-wide footer .footer-cont ul li h3 {
   background: darkred;
   color: white;
   padding: 15px;
   width: 270px;
   text-align: center;
-}
-.container-wide footer .footer-cont ul li a {
-  color: black;
 }
 .container-wide footer small {
   text-align: center;
@@ -529,10 +532,13 @@ a {
   align-items: center;
   padding: 5%;
   width: 250px;
-  border: 2px solid black;
   border-radius: 5px;
-  background-color: white;
-  height: 550px;
+  background-color: turquoise;
+  height: 450px;
+  border: 2px solid turquoise;
+}
+.about-row .port-cont:hover {
+  border-color: pink;
 }
 .about-row .port-cont .port-text-cont {
   display: flex;

@@ -1,11 +1,14 @@
 .container-wide {
   width: 100%;
+
+  //parallax effect
   background-image: url("../img/data-services.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // height: 1000px;
+
+
   .nav_bar {
 
     .flex (row, space-between, center);
@@ -223,7 +226,7 @@
     .flex(row, space-around, center);
     flex-wrap: wrap;
     .footer-cont {
-      .flex(row, space-around, baseline);
+      .flex(row, space-evenly, baseline);
       flex-wrap: wrap;
       width: 100%;
       img {
@@ -236,6 +239,9 @@
 
         li {
           padding: 10px;
+          a {
+            color: black;
+          }
           h3 {
             background: darkred;
             color: white;
@@ -243,9 +249,7 @@
             width: 270px;
             text-align: center;
           }
-          a {
-            color: black;
-          }
+
         }
       }
     }
