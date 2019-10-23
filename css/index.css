@@ -208,7 +208,10 @@ a {
 .nav_bar nav a span {
   font-size: 0.6em;
 }
-.nav_bar {
+.container-wide {
+  width: 100%;
+}
+.container-wide .nav_bar {
   background: grey;
   position: fixed;
   top: 0px;
@@ -221,26 +224,42 @@ a {
   z-index: 20;
 }
 @media (max-width: 550px) {
-  .nav_bar {
-    width: 550px;
+  .container-wide .nav_bar {
+    width: 100%;
   }
 }
-.nav_bar nav {
+@media (max-width: 375px) {
+  .container-wide .nav_bar {
+    width: 100%;
+  }
+}
+.container-wide .nav_bar nav {
   margin-left: 2%;
   width: 35%;
 }
-.nav_bar img {
+@media (max-width: 375px) {
+  .container-wide .nav_bar nav a {
+    width: 100%;
+    padding: 10px 5px;
+  }
+}
+.container-wide .nav_bar img {
   height: auto;
   width: 100px;
 }
-header {
+@media (max-width: 375px) {
+  .container-wide .nav_bar img {
+    display: none;
+  }
+}
+.container-wide header {
   padding-top: 40px;
   padding-bottom: 60px;
   width: 100%;
   height: 450px;
-  background-image: url('../img/datahero.png');
+  background-image: url("../img/datahero.png");
 }
-header div {
+.container-wide header div {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -250,50 +269,68 @@ header div {
   z-index: 5;
   background-repeat: no-repeat;
 }
-header div h1 {
+.container-wide header div h1 {
   max-width: 100%;
   height: auto;
 }
-header div h1 div {
+.container-wide header div h1 div {
   position: absolute;
 }
-header div h1 div em {
+.container-wide header div h1 div em {
   font-size: 2em;
 }
-header div h1 #dev {
+.container-wide header div h1 #dev {
   top: -30px;
   left: 4%;
 }
 @media (max-width: 900px) {
-  header div h1 #dev {
+  .container-wide header div h1 #dev {
     top: -50px;
     left: 3%;
     font-size: 0.8em;
   }
 }
-header div #desk {
+@media (max-width: 375px) {
+  .container-wide header div h1 #dev {
+    top: -20px;
+    font-size: 5rem;
+  }
+}
+.container-wide header div #desk {
   top: 90px;
   left: 25%;
 }
 @media (max-width: 900px) {
-  header div #desk {
+  .container-wide header div #desk {
     top: 110px;
     left: 3%;
     font-size: 0.8em;
   }
 }
-header div #queue {
+@media (max-width: 375px) {
+  .container-wide header div #desk {
+    top: 100px;
+    font-size: 7rem;
+  }
+}
+.container-wide header div #queue {
   top: 220px;
   left: 10%;
 }
 @media (max-width: 900px) {
-  header div #queue {
+  .container-wide header div #queue {
     top: 270px;
     left: 3%;
     font-size: 0.8em;
   }
 }
-header img {
+@media (max-width: 375px) {
+  .container-wide header div #queue {
+    top: 250px;
+    font-size: 9rem;
+  }
+}
+.container-wide header img {
   width: 40%;
   height: 450px;
   opacity: 0.8;
@@ -302,37 +339,42 @@ header img {
   transform: rotate(-90deg);
 }
 @media (max-width: 900px) {
-  header img {
+  .container-wide header img {
     width: 70%;
   }
 }
-section .content {
+@media (max-width: 375px) {
+  .container-wide header img {
+    width: 30%;
+  }
+}
+.container-wide section .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-section .student-help,
-section h2 {
+.container-wide section .student-help,
+.container-wide section h2 {
   text-align: center;
   margin: 4% 0;
 }
-section .student-help p,
-section h2 p {
+.container-wide section .student-help p,
+.container-wide section h2 p {
   color: slategrey;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   text-align: center;
 }
 @media (max-width: 550px) {
-  section .student-help p,
-  section h2 p {
+  .container-wide section .student-help p,
+  .container-wide section h2 p {
     font-size: 1.4rem;
     margin: 2%;
     text-align: center;
   }
 }
-section .support {
+.container-wide section .support {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -342,7 +384,7 @@ section .support {
   background-color: gainsboro;
 }
 @media (max-width: 550px) {
-  section .support {
+  .container-wide section .support {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -350,76 +392,101 @@ section .support {
     padding: 5%;
   }
 }
-section .support .img {
+.container-wide section .support .img {
   width: 45%;
   margin: 20px 2.5%;
   height: 100%;
 }
-@media (max-width: 550px) {
-  section .support .img {
-    width: 90%;
+@media (max-width: 799px) {
+  .container-wide section .support .img {
+    width: 95%;
   }
 }
-section .support p {
-  width: 50%;
+@media (max-width: 550px) {
+  .container-wide section .support .img {
+    width: 100%;
+    margin: 0;
+  }
+}
+.container-wide section .support p {
+  width: 45%;
   font-size: 2.5rem;
   text-align: center;
+  padding: 20px;
+}
+@media (max-width: 799px) {
+  .container-wide section .support p {
+    margin: auto;
+    font-size: 2.5rem;
+    border: 1px solid black;
+    background: cornsilk;
+  }
 }
 @media (max-width: 550px) {
-  section .support p {
+  .container-wide section .support p {
     width: 100%;
     font-size: 2rem;
+    margin: 0;
+    border: none;
+    background: none;
   }
 }
-.mid-content {
+@media (max-width: 375px) {
+  .container-wide section .support p {
+    padding: 20px 0;
+  }
+}
+.container-wide .mid-content {
   text-align: center;
+  padding: 2% 0;
 }
 @media (max-width: 550px) {
-  .mid-content {
+  .container-wide .mid-content {
     width: 100%;
   }
 }
-.mid-content img {
+.container-wide .mid-content img {
   width: 55%;
   padding: 2%;
 }
 @media (max-width: 550px) {
-  .mid-content img {
+  .container-wide .mid-content img {
     width: 85%;
   }
 }
-.mid-content h1 {
-  color: slategray;
-}
-@media (max-width: 550px) {
-  .mid-content h1 {
-    font-size: 500%;
-  }
-}
-.mid-content p {
+.container-wide .mid-content p {
   color: dimgrey;
   font-size: 2.5rem;
+  padding: 2% 0;
+}
+@media (max-width: 799px) {
+  .container-wide .mid-content p {
+    width: 75%;
+    font-size: 3rem;
+    margin: auto;
+  }
 }
 @media (max-width: 550px) {
-  .mid-content p {
-    font-size: 2.4rem;
+  .container-wide .mid-content p {
+    font-size: 2.8rem;
     padding: 4%;
   }
 }
-h3 {
+.container-wide h3 {
   text-align: center;
+  font-size: 5rem;
 }
-label {
+.container-wide label {
   display: block;
   font-size: 2rem;
 }
-input,
-textarea {
+.container-wide input,
+.container-wide textarea {
   display: block;
   width: 100%;
   font-size: 2rem;
 }
-footer {
+.container-wide footer {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: grey;
@@ -430,7 +497,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
 }
-footer .footer-cont {
+.container-wide footer .footer-cont {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -438,28 +505,28 @@ footer .footer-cont {
   flex-wrap: wrap;
   width: 100%;
 }
-footer .footer-cont img {
+.container-wide footer .footer-cont img {
   width: 150px;
   height: auto;
 }
-footer .footer-cont ul {
+.container-wide footer .footer-cont ul {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-footer .footer-cont ul li {
+.container-wide footer .footer-cont ul li {
   padding: 10px;
 }
-footer .footer-cont ul li h3 {
+.container-wide footer .footer-cont ul li h3 {
   background: darkred;
   color: white;
   padding: 15px;
   width: 270px;
   text-align: center;
 }
-footer .footer-cont ul li a {
+.container-wide footer .footer-cont ul li a {
   color: black;
 }
-footer small {
+.container-wide footer small {
   text-align: center;
   font-size: 1.5rem;
   display: block;
