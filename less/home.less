@@ -251,11 +251,15 @@
             color: black;
           }
           h3 {
-            background: #39bfff;
+            background: @penguinblue;
             color: black;
             padding: 15px;
             width: 270px;
             text-align: center;
+            &:hover {
+              color: white;
+              background: darken(@penguinblue, 50%);
+            }
           }
 
         }
