@@ -177,6 +177,7 @@ a {
 }
 #sub-btn:hover {
   background: lightblue;
+  color: black;
 }
 .btn-cont a {
   padding: 5px;
@@ -518,11 +519,15 @@ a {
   color: black;
 }
 .container-wide footer .footer-cont ul li h3 {
-  background: #39bfff;
+  background: #39BFFF;
   color: black;
   padding: 15px;
   width: 270px;
   text-align: center;
+}
+.container-wide footer .footer-cont ul li h3:hover {
+  color: white;
+  background: #002739;
 }
 .container-wide footer small {
   text-align: center;
