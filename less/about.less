@@ -1,6 +1,6 @@
 .about-row {
   width: 100%;
-  padding: 5%;
+  .margintb(20px, 20px);
   .flex(row, space-around, center);
   flex-wrap: wrap;
   // .paddingtb(50px, 50px);
@@ -8,19 +8,25 @@
   .port-cont {
     .flex(column, space-around, center);
     padding: 5%;
-
+    margin: 20px;
     border-radius: 5px;
     background-color: @penguinblue;
     height: 450px;
     border: 2px solid @penguinblue;
-
     &:hover {
       border-color: pink;
     }
-
     .port-text-cont {
       .flex(column, space-between, center);
       // display: none;
+    }
+
+    width: 20%;
+    @media @tablet {
+      width: 40%;
+    }
+    @media @lgphone {
+      width: 60%;
     }
   }
 }
