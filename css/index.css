@@ -358,6 +358,11 @@ a {
   margin: 20px 2.5%;
   height: 100%;
 }
+@media (max-width: 799px) {
+  .container-wide section .support .img {
+    width: 95%;
+  }
+}
 @media (max-width: 550px) {
   .container-wide section .support .img {
     width: 100%;
@@ -370,11 +375,21 @@ a {
   text-align: center;
   padding: 20px;
 }
+@media (max-width: 799px) {
+  .container-wide section .support p {
+    margin: auto;
+    font-size: 2.5rem;
+    border: 1px solid black;
+    background: cornsilk;
+  }
+}
 @media (max-width: 550px) {
   .container-wide section .support p {
     width: 100%;
     font-size: 2rem;
     margin: 0;
+    border: none;
+    background: none;
   }
 }
 .container-wide .mid-content {
@@ -399,6 +414,13 @@ a {
   color: dimgrey;
   font-size: 2.5rem;
   padding: 2% 0;
+}
+@media (max-width: 799px) {
+  .container-wide .mid-content p {
+    width: 75%;
+    font-size: 3rem;
+    margin: auto;
+  }
 }
 @media (max-width: 550px) {
   .container-wide .mid-content p {
