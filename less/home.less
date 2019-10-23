@@ -95,21 +95,6 @@
         }
       }// end queue
     }// end div
-
-    img {
-      width: 40%;
-      height: 450px;
-      opacity: 0.8;
-      border-radius: 100%;
-      padding-right: 3%;
-      transform: rotate(-90deg);
-      @media @tablet {
-        width: 70%;
-      }// end of tablet
-      @media @iphoneX{
-        width: 30%;
-      }
-    }// end of image
   } // .banner
 
   section {
@@ -119,7 +104,9 @@
     .student-help,
     h2 {
       text-align: center;
-      margin: 4% 0;
+      @media @phone {
+        font-size: 1.4rem;
+        margin: 4% 0;
       p {
         color: slategrey;
         font-family: "Poppins", sans-serif;
@@ -131,6 +118,24 @@
           text-align: center;
         }
       }
+
+    }
+  } // 1 content section
+  .support{
+    margin: 0 auto;
+    .flex(row, space-between, center);
+    flex-wrap: wrap;
+    background-color: gainsboro;
+
+    @media @phone{
+      .flex(column, space-between, center);
+      padding: 5%;
+    }
+    .img{
+      width: 45%;
+      margin: 20px 2.5%;
+      height: 100%;
+      border-radius: 5%;
     } // 1 content section
     .support {
       margin: 0 auto;
