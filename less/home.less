@@ -105,10 +105,10 @@
       } //h2
   
       p {
-        color: slategrey;
         font-family: "Poppins", sans-serif;
         font-size: 2rem;
         text-align: center;
+        .home-boxes();
   
         @media @phone {
           font-size: 1.4rem;
@@ -139,6 +139,7 @@
       .img {
         width: 45%;
         margin: 20px 2.5%;
+        border-radius: 5%;
 
         @media @tablet { // 799 width
           height: 430px; // img height
@@ -149,9 +150,10 @@
 
       } // end of img class
       p {
-        background: cornsilk; // color
+        // color
         margin: 0 auto;
         width: 43%;
+        .home-boxes();
 
         font-size: 2.5rem;
         text-align: center;
@@ -165,8 +167,7 @@
 
           font-size: 2rem;
           margin: 0;
-          border: none;
-          background: none;
+          
         } // end of phone
         @media @iphoneX{ // 375 width
           padding: 20px 0;
@@ -178,20 +179,25 @@
   .mid-content {
     text-align: center;
     padding: 2% 0;
+    .margintb(20px, 20px);
+    .home-boxes();
+
     @media @phone {
       width: 100%;
     }
     img {
       width: 55%;
       padding: 2%;
+      border-radius: 10%;
+
       @media @phone {
         width: 85%;
       }
     }
     p {
-      color: dimgrey;
       font-size: 2.5rem;
       padding: 2% 0;
+
       @media @lgphone{
         width: 75%;
         font-size: 3rem;
@@ -211,13 +217,15 @@
 
   label {
     display: block;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    .paddingtb(5px, 10px);
   } // label end
   input,
   textarea {
     display: block;
     width: 100%;
     font-size: 2rem;
+    .paddingtb(10px, 10px);
   } // input textarea end
   footer {
     .paddingtb(20px, 20px);
@@ -243,8 +251,8 @@
             color: black;
           }
           h3 {
-            background: darkred;
-            color: white;
+            background: #39bfff;
+            color: black;
             padding: 15px;
             width: 270px;
             text-align: center;

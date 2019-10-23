@@ -232,7 +232,7 @@ a {
   }
 }
 .nav_bar img {
-  height: auto;
+  height: 100px;
   width: 100px;
 }
 @media (max-width: 500px) {
@@ -350,10 +350,11 @@ a {
   }
 }
 .container-wide .content p {
-  color: slategrey;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   text-align: center;
+  background: #39bfff;
+  border-radius: 5%;
 }
 @media (max-width: 500px) {
   .container-wide .content p {
@@ -379,6 +380,7 @@ a {
 .container-wide .support .img {
   width: 45%;
   margin: 20px 2.5%;
+  border-radius: 5%;
 }
 @media (max-width: 900px) {
   .container-wide .support .img {
@@ -391,9 +393,10 @@ a {
   }
 }
 .container-wide .support p {
-  background: cornsilk;
   margin: 0 auto;
   width: 43%;
+  background: #39bfff;
+  border-radius: 5%;
   font-size: 2.5rem;
   text-align: center;
   padding: 20px;
@@ -410,8 +413,6 @@ a {
   .container-wide .support p {
     font-size: 2rem;
     margin: 0;
-    border: none;
-    background: none;
   }
 }
 @media (max-width: 375px) {
@@ -422,6 +423,10 @@ a {
 .container-wide .mid-content {
   text-align: center;
   padding: 2% 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #39bfff;
+  border-radius: 5%;
 }
 @media (max-width: 500px) {
   .container-wide .mid-content {
@@ -431,6 +436,7 @@ a {
 .container-wide .mid-content img {
   width: 55%;
   padding: 2%;
+  border-radius: 10%;
 }
 @media (max-width: 500px) {
   .container-wide .mid-content img {
@@ -438,7 +444,6 @@ a {
   }
 }
 .container-wide .mid-content p {
-  color: dimgrey;
   font-size: 2.5rem;
   padding: 2% 0;
 }
@@ -461,13 +466,17 @@ a {
 }
 .container-wide label {
   display: block;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 .container-wide input,
 .container-wide textarea {
   display: block;
   width: 100%;
   font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .container-wide footer {
   padding-top: 20px;
@@ -503,8 +512,8 @@ a {
   color: black;
 }
 .container-wide footer .footer-cont ul li h3 {
-  background: darkred;
-  color: white;
+  background: #39bfff;
+  color: black;
   padding: 15px;
   width: 270px;
   text-align: center;
