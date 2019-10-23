@@ -19,19 +19,20 @@
     width: 100px;
     
   }
-} 
+}
 
 header {
   .paddingtb(40px, 60px);
   width: 100%;
   height: 450px;
-  background: lightgrey;
+  background-image: url('../img/datahero.png');
 
   div {
     .flex (row, flex-end, center);
     position: relative;
     margin: 0 auto;
     z-index: 5;
+    background-repeat: no-repeat;
       h1 {
         max-width: 100%;
         height: auto;
@@ -111,28 +112,34 @@ section {
     }
   } // 1 content section
   .support{
+    margin: 0 auto;
     .flex(row, space-between, center);
+    flex-wrap: wrap;
     background-color: gainsboro;
+
     @media @phone{
       .flex(column, space-between, center);
       padding: 5%;
     }
+    .img{
+      width: 45%;
+      margin: 20px 2.5%;
+      height: 100%;
+      @media @phone {
+        width: 90%;
+      }
+    } // end of img class
     p{
+      width: 50%;
       font-size: 2.5rem;
       text-align: center;
       @media @phone{
+        width: 100%;
         font-size: 2rem;
       }// end of media
     }// end of p tag
   }// end of support class 
-  .img{
-    width: 45%;
-    margin: 20px 2.5%;
-    height: 100%;
-    @media @phone{
-      width: 90%;
-    }
-  } // end of img class
+
 }// section end 
 
 .mid-content{
