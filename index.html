@@ -1,61 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
-  <title>DevDesk Queue</title>
-</head>
-<body>
-  <div class = "container">
-    <header>
-      <div class = "nav_bar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>DevDesk Queue</title>
+  </head>
+  <body>
+    <div class="container-wide">
+      <div class="nav_bar">
         <nav>
           <a href="#">H<span>ome</span></a>
           <a href="#">S<span>ervices</span></a>
           <a href="#">S<span>olution</span></a>
-          <a href="#">T<span>eam</span></a>
+          <a href="about.html">T<span>eam</span></a>
         </nav>
-        <img src="img/logo.png" alt="DevDesk Queue Logo: Blue Pinguin">
+        <img src="img/logo.png" alt="DevDesk Queue Logo: Blue Penguin" />
       </div>
-      <div class="banner">
 
-        <h1>
-          <div id='dev'><em>D</em>ev</div>
-          <div id='desk'><em>D</em>esk</div>
-          <div id='queue'><em>Q</em>ueue</div>
-        </h1>
+      <header>
+        <div class="container-desk">
+          <h1>
+            <div id="dev"><em>D</em>ev</div>
+            <div id="desk"><em>D</em>esk</div>
+            <div id="queue"><em>Q</em>ueue</div>
+          </h1>
+          <!-- 
+        <img src="img\data-services.jpg" alt="unsplash img"> -->
+        </div>
+      </header>
 
+      <section class="content">
+        <div class="student-help">
+          <h2>Student support and help</h2>
+          <p>
+            DevDekQueue is built with suppport for Lambda School Students.<br />
+            Application that makes it easier for Lambda School’s staff<br />
+            to keep track of questions asked by students.
+          </p>
+        </div>
 
-        <img src="img/image11.jpg" alt="unsplash img">
+        <div class="support">
+          <img
+            class="img"
+            src="img\image3.jpg"
+            alt="Student sitting on table in front of laptop biting pencil"
+          />
+
+          <p>
+            Do not panic, DevDekQueue is on the way. With DevDekQueue students
+            can ask for help, log in and have the ability to see tickets that
+            are currently open for help.<br />
+          </p>
+        </div>
+
+        <div class="support">
+          <p>
+            You are not alone, DevDekQueue provides student with professional
+            and qualified assistant aide that will not stop until the issue is
+            completely resolved.
+          </p>
+
+          <img
+            class="img"
+            src="img\image6.jpg"
+            alt="Student sitting on table in front of laptop biting pencil"
+          />
+        </div>
+
+        <div class="support">
+          <img
+            class="img"
+            src="img\image7.jpg"
+            alt="Student sitting on table in front of laptop biting pencil"
+          />
+
+          <p>
+            DevDekQueue is the place where students can escalate their concerns
+            and receive help instantaneously. Stress free way to great support
+            and students guaranteed satisfaction.
+          </p>
+        </div>
+      </section>
+
+      <div class="mid-content">
+        <h3>DevDeskQueue</h3>
+
+        <p>
+          Makes is easier for students to request and track questions Sets in
+          motion a way to create new<br />
+          help with title, description, what you have tried so far and a
+          category.
+        </p>
+
+        <img
+          src="https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        />
       </div>
-    </header>
-  <section>
-    <div class = "support">
-      <h2>Student support and help </h2>
 
-      <p></p>
-
+      <footer>
+        <div class="footer-cont container-desk">
+          <ul id="learn">
+            <li><h3>Learn more!</h3></li>
+            <li>
+              <label for="username">First name</label>
+              <input
+                type="text"
+                id="username"
+                placeholder=" John Smith"
+                required
+              />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="email address"
+                required
+              />
+            </li>
+            <li>
+              <input type="submit" id="sub-btn" value="Let's get started" />
+            </li>
+          </ul>
+          <ul id="follow">
+            <li><h3>Follow us!</h3></li>
+            <li><a href="twitter.com">Twitter</a></li>
+            <li><a href="facebook.com">Facebook</a></li>
+            <li><a href="https://github.com/DevDesk-Queue-bw">GitHub</a></li>
+            <li><a href="https://linkedin.com">LinkedIn</a></li>
+          </ul>
+        </div>
+        <small>Copyright&copy;2019 TeamPenguin-All rights reserved</small>
+      </footer>
     </div>
-
-  </section>
-
-<form class = form>
-  <h3>Learn More</h3>
-  <label for="username">First name</label>
-  <input type="text" id="username" placeholder="John" required>
-  <label for="username">Last name</label>
-  <input type="text" id="username" placeholder="Smith" required>
-  <label for="email">Work email</label>
-  <input type="email" id="email" placeholder="email" required>
-  <label for="phone">Phone number</label>
-  <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx"
-   pattern= "[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-   <input type="submit" id="sub-btn" value="Let's get started">
-</form>
-  
-
-</body>
+  </body>
 </html>
