@@ -189,6 +189,12 @@ a {
   height: 310px;
   border: 1px solid turquoise;
 }
+.fa {
+  font-size: 30px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
 .nav_bar {
   display: flex;
   flex-direction: row;
