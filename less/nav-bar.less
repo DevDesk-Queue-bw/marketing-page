@@ -1,8 +1,17 @@
 .nav_bar{
+    background: white;
+    position: fixed;
+    top: 0px;
+
     .flex (row, space-between, center);
+
     nav{
+
         .flex (row, space-between, default);
-        width: 75%;
+        width: 35%;
+        margin-left: 2%;
+        height: 75px;
+
         a{
             color: black;
             text-decoration: none;
@@ -11,6 +20,18 @@
             span{
                 font-size: 0.6em;
             }
+            @media @iphoneX{
+                width: 100%;
+                padding: 10px 5px;
+              }
         }
     }
+    
+    img {
+        height: auto;
+        width: 100px;
+        @media @phone {
+         display: none;
+        }// end iphone
+      }
 }

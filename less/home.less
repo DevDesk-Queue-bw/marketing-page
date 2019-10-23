@@ -1,36 +1,11 @@
 .container-wide {
   width: 100%;
   .nav_bar {
-    background: grey;
-    position: fixed;
-    top: 0px;
-    @media @phone {
-      width: 100%;
-    }// end phone
-    @media @iphoneX{
-      width: 100%;
-    }// end iphone
+
     .flex (row, space-between, center);
     width: 100%;
     height: auto;
     z-index: 20;
-    nav {
-      margin-left: 2%;
-      width: 35%;
-      a {
-        @media @iphoneX{
-          width: 100%;
-          padding: 10px 5px;
-        }
-      }
-    }
-    img {
-      height: auto;
-      width: 100px;
-      @media @iphoneX{
-       display: none;
-      }// end iphone
-    }
   }
 
   header {
@@ -140,45 +115,51 @@
 
  
     .support {
-      margin: 0 auto;
       .flex(row, space-between, center);
       flex-wrap: wrap;
+
+      margin: 0 auto;
+
       background-color: gainsboro;
-      @media @phone {
-        .flex(column, space-between, center);
+
+      @media @phone { // 550 width
+        flex-direction: column;
         padding: 5%;
       }
+
       .img {
         width: 45%;
         margin: 20px 2.5%;
-        height: 100%;
-        @media @custom-bp{
+
+        @media @tablet { // 799 width
+          height: 430px; // img height
+        }
+        @media @lgphone {
           width: 95%;
         }
-        @media @phone {
-          width: 100%;
-          margin: 0;
-        }
+
       } // end of img class
       p {
-        width: 45%;
+        background: cornsilk; // color
+        margin: 0 auto;
+        width: 43%;
+
         font-size: 2.5rem;
         text-align: center;
         padding: 20px;
-        @media @custom-bp{
-          margin: auto;
-          font-size: 2.5rem;
-          border: 1px solid black;
-          background: cornsilk;
+        @media @lgphone{ // 799 width
+          width: 90%;
+          .margintb(10px, 10px);
+          order: 5;
         }
-        @media @phone {
-          width: 100%;
+        @media @phone { // 550 width
+
           font-size: 2rem;
           margin: 0;
           border: none;
           background: none;
         } // end of phone
-        @media @iphoneX{
+        @media @iphoneX{ // 375 width
           padding: 20px 0;
         }
       } // end of p tag
@@ -202,7 +183,7 @@
       color: dimgrey;
       font-size: 2.5rem;
       padding: 2% 0;
-      @media @custom-bp{
+      @media @lgphone{
         width: 75%;
         font-size: 3rem;
         margin: auto;
