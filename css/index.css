@@ -333,60 +333,41 @@ a {
     font-size: 0.8em;
   }
 }
-
-section .content {
-
 @media (max-width: 375px) {
   .container-wide header div #queue {
     top: 250px;
     font-size: 9rem;
   }
 }
-.container-wide header img {
-  width: 40%;
-  height: 450px;
-  opacity: 0.8;
-  border-radius: 100%;
-  padding-right: 3%;
-  transform: rotate(-90deg);
-}
-@media (max-width: 900px) {
-  .container-wide header img {
-    width: 70%;
-  }
-}
-@media (max-width: 375px) {
-  .container-wide header img {
-    width: 30%;
-  }
-}
-.container-wide section .content {
+.container-wide .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.container-wide section .student-help,
-.container-wide section h2 {
+.container-wide .content h2 {
   text-align: center;
-  margin: 4% 0;
 }
-.container-wide section .student-help p,
-.container-wide section h2 p {
+@media (max-width: 550px) {
+  .container-wide .content h2 {
+    font-size: 1.4rem;
+    margin: 4% 0;
+  }
+}
+.container-wide .content p {
   color: slategrey;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   text-align: center;
 }
 @media (max-width: 550px) {
-  .container-wide section .student-help p,
-  .container-wide section h2 p {
+  .container-wide .content p {
     font-size: 1.4rem;
     margin: 2%;
     text-align: center;
   }
 }
-.container-wide section .support {
+.container-wide .support {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -396,7 +377,7 @@ section .content {
   background-color: gainsboro;
 }
 @media (max-width: 550px) {
-  .container-wide section .support {
+  .container-wide .support {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -404,31 +385,30 @@ section .content {
     padding: 5%;
   }
 }
-.container-wide section .support .img {
+.container-wide .support .img {
   width: 45%;
   margin: 20px 2.5%;
   height: 100%;
-  border-radius: 5%;
 }
 @media (max-width: 799px) {
-  .container-wide section .support .img {
+  .container-wide .support .img {
     width: 95%;
   }
 }
 @media (max-width: 550px) {
-  .container-wide section .support .img {
+  .container-wide .support .img {
     width: 100%;
     margin: 0;
   }
 }
-.container-wide section .support p {
+.container-wide .support p {
   width: 45%;
   font-size: 2.5rem;
   text-align: center;
   padding: 20px;
 }
 @media (max-width: 799px) {
-  .container-wide section .support p {
+  .container-wide .support p {
     margin: auto;
     font-size: 2.5rem;
     border: 1px solid black;
@@ -436,7 +416,7 @@ section .content {
   }
 }
 @media (max-width: 550px) {
-  .container-wide section .support p {
+  .container-wide .support p {
     width: 100%;
     font-size: 2rem;
     margin: 0;
@@ -445,7 +425,7 @@ section .content {
   }
 }
 @media (max-width: 375px) {
-  .container-wide section .support p {
+  .container-wide .support p {
     padding: 20px 0;
   }
 }
