@@ -6,7 +6,10 @@
     top: 0px;
     @media @phone {
       width: 100%;
-    }
+    }// end phone
+    @media @iphoneX{
+      width: 100%;
+    }// end iphone
     .flex (row, space-between, center);
     width: 100%;
     height: auto;
@@ -14,10 +17,19 @@
     nav {
       margin-left: 2%;
       width: 35%;
+      a {
+        @media @iphoneX{
+          width: 100%;
+          padding: 10px 5px;
+        }
+      }
     }
     img {
       height: auto;
       width: 100px;
+      @media @iphoneX{
+       display: none;
+      }// end iphone
     }
   }
 
@@ -49,9 +61,13 @@
             top: -50px;
             left: 3%;
             font-size: 0.8em;
+          }// end of media
+          @media @iphoneX{
+            top: -20px;
+            font-size: 5rem;
           }
-        }
-      }
+        }// end of dev
+      }// end of h1
       #desk {
         top: 90px;
         left: 25%;
@@ -59,8 +75,12 @@
           top: 110px;
           left: 3%;
           font-size: 0.8em;
+        }// end tablet
+        @media @iphoneX{
+          top: 100px;
+          font-size: 7rem;
         }
-      }
+      }// end desk
       #queue {
         top: 220px;
         left: 10%;
@@ -68,9 +88,13 @@
           top: 270px;
           left: 3%;
           font-size: 0.8em;
+        }// end tablet
+        @media @iphoneX{
+          top: 250px;
+          font-size: 9rem;
         }
-      }
-    }
+      }// end queue
+    }// end div
 
     img {
       width: 40%;
@@ -81,8 +105,11 @@
       transform: rotate(-90deg);
       @media @tablet {
         width: 70%;
+      }// end of tablet
+      @media @iphoneX{
+        width: 30%;
       }
-    }
+    }// end of image
   } // .banner
 
   section {
@@ -143,7 +170,10 @@
           margin: 0;
           border: none;
           background: none;
-        } // end of media
+        } // end of phone
+        @media @iphoneX{
+          padding: 20px 0;
+        }
       } // end of p tag
     } // end of support class
   } // section end
@@ -171,7 +201,7 @@
         margin: auto;
       }
       @media @phone {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
         padding: 4%;
       }
     }
