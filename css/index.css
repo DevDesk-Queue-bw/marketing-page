@@ -255,7 +255,7 @@ a {
 }
 .container-wide {
   width: 100%;
-  background-image: url("../img/data-services.jpg");
+  background-image: url("../img/snow.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -273,6 +273,8 @@ a {
 .container-wide header {
   padding-top: 40px;
   padding-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
   height: 450px;
 }
@@ -355,14 +357,24 @@ a {
 }
 @media (max-width: 1000px) {
   .container-wide .content .student-help {
-    width: 90%;
+    width: 95%;
   }
 }
-.container-wide .content .student-help h2 {
+.container-wide .content .student-help h3 {
+  background: #39BFFF;
+  color: black;
+  padding: 15px;
+  width: 270px;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container-wide .content .student-help h3:hover {
+  color: white;
+  background: #002739;
 }
 @media (max-width: 500px) {
-  .container-wide .content .student-help h2 {
+  .container-wide .content .student-help h3 {
     font-size: 1.4rem;
     margin: 4% 0;
   }
@@ -371,8 +383,6 @@ a {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   text-align: center;
-  background: #39bfff;
-  border-radius: 10px;
 }
 @media (max-width: 500px) {
   .container-wide .content .student-help p {
@@ -446,9 +456,9 @@ a {
   background: #39bfff;
   border-radius: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .container-wide .mid-content {
-    width: 100%;
+    width: 97%;
   }
 }
 .container-wide .mid-content img {
