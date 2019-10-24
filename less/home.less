@@ -1,201 +1,144 @@
 .container-wide {
   width: 100%;
+
+  //parallax effect
+  background-image: url("../img/snow.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
   .nav_bar {
-    background: grey;
-    position: fixed;
-    top: 0px;
-    @media @phone {
-      width: 100%;
-    }// end phone
-    @media @iphoneX{
-      width: 100%;
-    }// end iphone
+
     .flex (row, space-between, center);
     width: 100%;
     height: auto;
     z-index: 20;
-    nav {
-      margin-left: 2%;
-      width: 35%;
-      a {
-        @media @iphoneX{
-          width: 100%;
-          padding: 10px 5px;
-        }
-      }
-    }
-    img {
-      height: auto;
-      width: 100px;
-      @media @iphoneX{
-       display: none;
-      }// end iphone
-    }
   }
 
   header {
     .paddingtb(40px, 60px);
+    .margintb(20px, 20px);
     width: 100%;
     height: 450px;
-    background-image: url("../img/datahero.png");
-
-    div {
-      .flex (row, flex-end, center);
-      position: relative;
-      margin: 0 auto;
-      z-index: 5;
-      background-repeat: no-repeat;
-      h1 {
-        max-width: 100%;
-        height: auto;
-        div {
-          position: absolute;
-          em {
-            font-size: 2em;
-          }
-        }
-        #dev {
-          top: -30px;
-          left: 4%;
-          @media @tablet {
-            top: -50px;
-            left: 3%;
-            font-size: 0.8em;
-          }// end of media
-          @media @iphoneX{
-            top: -20px;
-            font-size: 5rem;
-          }
-        }// end of dev
-      }// end of h1
-      #desk {
-        top: 90px;
-        left: 25%;
-        @media @tablet {
-          top: 110px;
-          left: 3%;
-          font-size: 0.8em;
-        }// end tablet
-        @media @iphoneX{
-          top: 100px;
-          font-size: 7rem;
-        }
-      }// end desk
-      #queue {
-        top: 220px;
-        left: 10%;
-        @media @tablet {
-          top: 270px;
-          left: 3%;
-          font-size: 0.8em;
-        }// end tablet
-        @media @iphoneX{
-          top: 250px;
-          font-size: 9rem;
-        }
-      }// end queue
-    }// end div
-
-    img {
-      width: 40%;
-      height: 450px;
-      opacity: 0.8;
-      border-radius: 100%;
-      padding-right: 3%;
-      transform: rotate(-90deg);
-      @media @tablet {
-        width: 70%;
-      }// end of tablet
-      @media @iphoneX{
-        width: 30%;
-      }
-    }// end of image
+    // background-image: url("../img/snow.jpg");
   } // .banner
 
-  section {
-    .content {
-      .flex (column, space-between, center);
-    }
-    .student-help,
-    h2 {
-      text-align: center;
-      margin: 4% 0;
+
+  .content {
+    .flex (column, space-between, center);
+    .student-help {
+
+      @media @tablet {
+        width: 95%;
+      }
+      h3 {
+        .cta();
+        text-align: center;
+        .margintb(10px, 10px);
+  
+        @media @phone {
+          font-size: 1.4rem;
+          margin: 4% 0;
+        }
+      } //h2
+  
       p {
-        color: slategrey;
         font-family: "Poppins", sans-serif;
         font-size: 2rem;
         text-align: center;
+
+  
         @media @phone {
           font-size: 1.4rem;
           margin: 2%;
           text-align: center;
         }
-      }
-    } // 1 content section
+  
+      } //p
+
+    }
+  }
+
+
+ 
     .support {
-      margin: 0 auto;
       .flex(row, space-between, center);
       flex-wrap: wrap;
-      background-color: gainsboro;
-      @media @phone {
-        .flex(column, space-between, center);
+
+      margin: 0 auto;
+
+      // background-color: gainsboro;
+
+      @media @phone { // 550 width
+        flex-direction: column;
         padding: 5%;
       }
+
       .img {
         width: 45%;
         margin: 20px 2.5%;
-        height: 100%;
-        @media @custom-bp{
+        border-radius: 5%;
+
+        @media @tablet { // 799 width
+          height: 430px; // img height
+        }
+        @media @lgphone {
           width: 95%;
         }
-        @media @phone {
-          width: 100%;
-          margin: 0;
-        }
+
       } // end of img class
       p {
-        width: 45%;
+        // color
+        margin: 0 auto;
+        width: 43%;
+        .home-boxes();
+
         font-size: 2.5rem;
         text-align: center;
         padding: 20px;
-        @media @custom-bp{
-          margin: auto;
-          font-size: 2.5rem;
-          border: 1px solid black;
-          background: cornsilk;
+        @media @lgphone{ // 799 width
+          width: 90%;
+          .margintb(10px, 10px);
+          order: 5;
         }
-        @media @phone {
-          width: 100%;
+        @media @phone { // 550 width
+
           font-size: 2rem;
           margin: 0;
-          border: none;
-          background: none;
+          
         } // end of phone
-        @media @iphoneX{
+        @media @iphoneX{ // 375 width
           padding: 20px 0;
         }
       } // end of p tag
     } // end of support class
-  } // section end
+
 
   .mid-content {
     text-align: center;
     padding: 2% 0;
-    @media @phone {
-      width: 100%;
+    .margintb(20px, 20px);
+    .home-boxes();
+
+    @media @tablet {
+      width: 97%;
     }
     img {
       width: 55%;
       padding: 2%;
+      border-radius: 10%;
+
       @media @phone {
         width: 85%;
       }
     }
     p {
-      color: dimgrey;
       font-size: 2.5rem;
       padding: 2% 0;
-      @media @custom-bp{
+
+      @media @lgphone{
         width: 75%;
         font-size: 3rem;
         margin: auto;
@@ -204,64 +147,40 @@
         font-size: 2.8rem;
         padding: 4%;
       }
-    }
-  }
+    } // p
+  } // .mid-content
   h3 {
     text-align: center;
     font-size: 5rem;
   }
   
-
-  label {
-    display: block;
-    font-size: 2rem;
-  } // label end
-  input,
-  textarea {
-    display: block;
-    width: 100%;
-    font-size: 2rem;
-  } // input textarea end
   footer {
     .paddingtb(20px, 20px);
     background-color: grey;
     width: 100%;
-    .flex(row, space-around, center);
+    .flex(column, space-around, center);
     flex-wrap: wrap;
+
+    h3 {
+      .cta();
+      width: 80%;
+    }
+
     .footer-cont {
-      .flex(row, space-around, baseline);
+      .flex(column, space-evenly, flex-start);
       flex-wrap: wrap;
-      width: 100%;
+      width: 50%;
       img {
         width: 150px;
         height: auto;
       }
 
       ul {
+        .flex(row, space-evenly, flex-end);
         .paddingtb(10px, 10px);
-
-        li {
-          padding: 10px;
-          h3 {
-            background: darkred;
-            color: white;
-            padding: 15px;
-            width: 270px;
-            text-align: center;
-          }
-          a {
-            color: black;
-          }
-        }
       }
     }
-    small {
-      text-align: center;
-      font-size: 1.5rem;
-      display: block;
-      width: 100%;
-      padding: 20px;
-    }
-    // 1 footer section
+
+
   } // footer end
 } // end of container
