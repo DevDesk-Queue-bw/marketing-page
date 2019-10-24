@@ -23,78 +23,13 @@
     width: 100%;
     height: 450px;
     // background-image: url("../img/snow.jpg");
-
-    div {
-      .flex (row, flex-end, center);
-      position: relative;
-      margin: 0 auto;
-      z-index: 5;
-      background-repeat: no-repeat;
-      h1 {
-        max-width: 100%;
-        height: auto;
-        div {
-          position: absolute;
-          em {
-            font-size: 2em;
-          }
-        }
-        #dev {
-          top: -30px;
-          left: 4%;
-
-          @media @tablet {
-            top: -50px;
-            left: 3%;
-            font-size: 0.8em;
-          }// end of media
-
-          @media @iphoneX{
-            top: -20px;
-            font-size: 5rem;
-          }
-
-        }// end of dev
-      }// end of h1
-      #desk {
-        top: 90px;
-        left: 25%;
-
-        @media @tablet {
-          top: 110px;
-          left: 3%;
-          font-size: 0.8em;
-        }// end tablet
-
-        @media @iphoneX{
-          top: 100px;
-          font-size: 7rem;
-        }
-
-      }// end desk
-      #queue {
-        top: 220px;
-        left: 10%;
-
-        @media @tablet {
-          top: 270px;
-          left: 3%;
-          font-size: 0.8em;
-        }// end tablet
-
-        @media @iphoneX{
-          top: 250px;
-          font-size: 9rem;
-        }
-
-      }// end queue
-    }// end div
   } // .banner
 
 
   .content {
     .flex (column, space-between, center);
     .student-help {
+
       @media @tablet {
         width: 95%;
       }
@@ -124,11 +59,7 @@
       } //p
 
     }
-
-
-
-
-    }
+  }
 
 
  
@@ -223,57 +154,33 @@
     font-size: 5rem;
   }
   
-
-  label {
-    display: block;
-    font-size: 2.5rem;
-    .paddingtb(5px, 10px);
-  } // label end
-  input,
-  textarea {
-    display: block;
-    width: 100%;
-    font-size: 2rem;
-    .paddingtb(10px, 10px);
-  } // input textarea end
   footer {
     .paddingtb(20px, 20px);
     background-color: grey;
     width: 100%;
-    .flex(row, space-around, center);
+    .flex(column, space-around, center);
     flex-wrap: wrap;
+
+    h3 {
+      .cta();
+      width: 80%;
+    }
+
     .footer-cont {
-      .flex(row, space-evenly, baseline);
+      .flex(column, space-evenly, flex-start);
       flex-wrap: wrap;
-      width: 100%;
+      width: 50%;
       img {
         width: 150px;
         height: auto;
       }
 
       ul {
+        .flex(row, space-evenly, flex-end);
         .paddingtb(10px, 10px);
-
-        li {
-          padding: 10px;
-          a {
-            color: black;
-          }
-          h3 {
-            .cta();
-          }
-
-
-        }
       }
     }
-    small {
-      text-align: center;
-      font-size: 1.5rem;
-      display: block;
-      width: 100%;
-      padding: 20px;
-    }
-    // 1 footer section
+
+
   } // footer end
 } // end of container
