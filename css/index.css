@@ -498,7 +498,7 @@ small {
 }
 .container-wide .mid-content p {
   font-size: 2.5rem;
-  padding: 2% 0;
+  padding: 15px;
 }
 @media (max-width: 799px) {
   .container-wide .mid-content p {
