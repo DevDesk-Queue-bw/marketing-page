@@ -588,7 +588,7 @@ small {
   width: 20%;
 }
 .about-row .port-cont:hover {
-  border-color: pink;
+  border-color: black;
 }
 .about-row .port-cont .port-text-cont {
   display: flex;
